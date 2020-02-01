@@ -1,54 +1,150 @@
 
-html{
-    body{
-        header{
-            .bg_img {
-                background-image: url("header.jpg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 250px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
+
+header{
+    display: flex;
+    flex-direction: column;
+            
+    .bg_img {        
+       
+        border: 1px solid purple;
+        background-image: url("header.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 500px) {
+            width:100%;
+        }        
                 
     
             
-                .nav_container {
-                    border: 20px solid rgba(133, 134, 134, .5);
-                    border-radius: 1.2rem;
-                    width: 70%;
-                    height: 50%;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
+        .nav_container {
+            
+            border: 20px solid rgba(133, 134, 134, .5);
+            border-radius: 1.2rem;
+            width: 70%;
+            height: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
                     
+            @media(max-width: 500px) {
+                border:none;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }     
+            
+            p {
+                     
+                border: 1px solid green;
+                align-content: flex-end;
+                color: white;
+                width: 40%;
+                font-size: 3rem;
+                padding-top: 1%;
+                font-family: 'Julius Sans One', sans-serif;
+                font-weight: bolder;
                 
-                    p {
-                        align-content: flex-end;
-                        color: white;
-                        width: 40%;
-                        font-size: 3rem;
-                        padding: 1%;
-                        font-family: 'Gloria Hallelujah', cursive;
-                    }
-
-                    nav {
-                        display: flex;
-                        justify-content: space-evenly;
-                        width: 70%;
-                        
-                        
-                        a {
-                           text-decoration: none;
-                            color: white;
-                            font-family: 'Gloria Hallelujah', cursive;
-                            font-size: 2rem;
-                        }
-                    }
+                @media(max-width: 500px){
+                    width: 95%;
+                    font-size: 2rem;
+                    height: 15%;
+                    font-weight: bolder;
                 }
             }
+
+            nav {
+                border: 1px solid red;
+                display: flex;
+                justify-content: space-evenly;
+                width: 70%;
+                        
+                @media(max-width: 500px){
+                    height: 80%;
+                    width: 95%;
+                    flex-direction: column;
+                }        
+                
+                a {
+                    border: 1px solid blue;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-family: 'Julius Sans One', sans-serif;
+                    font-size: 2rem;
+                    text-align: center;
+                           
+                          
+                    @media(max-width: 500px){
+                        width: 95%;
+                        margin-top: 1%;
+                    }
+                           
+                }
+            }
+                
+                   
+                
         }
     }
+    .header_content {
+        border: 3px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(37,201,206,0), rgba(37,201,206,1));
+               
+               
+        @media(max-width: 500px) {
+                    
+                    
+        }
+            
+        h1 {
+            border: 1px solid red;
+            font-size: 5rem;
+            font-family: 'Lobster', cursive;
+            width:15%;
+
+                
+            @media(max-width: 500px){
+                font-size: 2rem;
+                width: 50%;
+               
+            }
+        }
+            
+        p {
+            border: 1px solid blue;
+            font-family: 'Questrial', sans-serif;
+
+            @media(max-width: 500px){
+                width:50%;
+            }
+            
+        }
+        .start {
+            font-size: 4rem;
+        }
+        hr {
+            
+            
+            @media(max-width: 500px){
+                width:80%;
+                border: 1px solid red;
+            }
+        }
+            
+            
+                
+
+    }
 }
+ 

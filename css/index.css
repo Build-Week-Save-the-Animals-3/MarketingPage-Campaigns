@@ -122,7 +122,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html body header .bg_img {
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .bg_img {
+  border: 1px solid purple;
   background-image: url("header.jpg");
   background-position: center;
   background-size: cover;
@@ -132,7 +137,12 @@ html body header .bg_img {
   justify-content: center;
   align-items: center;
 }
-html body header .bg_img .nav_container {
+@media (max-width: 500px) {
+  header .bg_img {
+    width: 100%;
+  }
+}
+header .bg_img .nav_container {
   border: 20px solid rgba(133, 134, 134, 0.5);
   border-radius: 1.2rem;
   width: 70%;
@@ -141,22 +151,104 @@ html body header .bg_img .nav_container {
   justify-content: flex-end;
   align-items: center;
 }
-html body header .bg_img .nav_container p {
+@media (max-width: 500px) {
+  header .bg_img .nav_container {
+    border: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+header .bg_img .nav_container p {
+  border: 1px solid green;
   align-content: flex-end;
   color: white;
   width: 40%;
   font-size: 3rem;
-  padding: 1%;
-  font-family: 'Gloria Hallelujah', cursive;
+  padding-top: 1%;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bolder;
 }
-html body header .bg_img .nav_container nav {
+@media (max-width: 500px) {
+  header .bg_img .nav_container p {
+    width: 95%;
+    font-size: 2rem;
+    height: 15%;
+    font-weight: bolder;
+  }
+}
+header .bg_img .nav_container nav {
+  border: 1px solid red;
   display: flex;
   justify-content: space-evenly;
   width: 70%;
 }
-html body header .bg_img .nav_container nav a {
+@media (max-width: 500px) {
+  header .bg_img .nav_container nav {
+    height: 80%;
+    width: 95%;
+    flex-direction: column;
+  }
+}
+header .bg_img .nav_container nav a {
+  border: 1px solid blue;
   text-decoration: none;
-  color: white;
-  font-family: 'Gloria Hallelujah', cursive;
+  color: #ffffff;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header .bg_img .nav_container nav a {
+    width: 95%;
+    margin-top: 1%;
+  }
+}
+header .header_content {
+  border: 3px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(37, 201, 206, 0), #25c9ce);
+}
+header .header_content h1 {
+  border: 1px solid red;
+  font-size: 5rem;
+  font-family: 'Lobster', cursive;
+  width: 15%;
+}
+@media (max-width: 500px) {
+  header .header_content h1 {
+    font-size: 2rem;
+    width: 50%;
+  }
+}
+header .header_content p {
+  border: 1px solid blue;
+  font-family: 'Questrial', sans-serif;
+}
+@media (max-width: 500px) {
+  header .header_content p {
+    width: 50%;
+  }
+}
+header .header_content .start {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  header .header_content hr {
+    width: 80%;
+    border: 1px solid red;
+  }
+}
+.section_one {
+  display: flex;
+  color: #25c9ce;
+}
+.section_one img {
+  height: 20%;
+  width: 20%;
 }
