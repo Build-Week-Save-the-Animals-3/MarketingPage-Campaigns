@@ -243,6 +243,10 @@ header .header_content .start {
   width: 40%;
   text-align: center;
 }
+header .header_content .start a {
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 500px) {
   header .header_content hr {
     width: 80%;
@@ -266,10 +270,12 @@ header .header_content .start {
 .section_one .section_one_heading h1 {
   font-size: 4rem;
   font-family: 'Podkova', serif;
+  color: black;
 }
 .section_one .section_one_heading p {
   font-family: 'Salsa', cursive;
   width: 50%;
+  color: black;
 }
 .section_one .section_one_heading hr {
   width: 60%;
@@ -298,6 +304,7 @@ header .header_content .start {
 .section_one .icons p {
   font-family: 'Life Savers', cursive;
   font-size: 1.5rem;
+  color: black;
 }
 .section_one .icons .otter_icon {
   width: 22%;
