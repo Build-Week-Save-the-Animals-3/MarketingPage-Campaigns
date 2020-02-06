@@ -1,3 +1,12 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 html,
 body,
 div,
@@ -227,8 +236,8 @@ header .bg_img .nav_container nav a {
 }
 header .header_content {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-image: linear-gradient(to bottom right, rgba(255, 230, 173, 0), #ffe6ad);
 }
@@ -283,9 +292,19 @@ header .header_content .start {
     width: 80%;
   }
 }
+@media (max-width: 500px) {
+  header .header_content .start svg {
+    display: none;
+  }
+}
 header .header_content .start a {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 1000px) {
+  header .header_content .start a {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 500px) {
   header .header_content .start a {
@@ -317,17 +336,17 @@ footer nav a {
 }
 .section_one {
   display: flex;
+  flex-direction: column;
   color: #ffe6ad;
   height: 100%;
   width: 100%;
-  flex-direction: column;
 }
 .section_one .section_one_heading {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .section_one .section_one_heading h1 {
   font-size: 4rem;
@@ -362,8 +381,8 @@ footer nav a {
 .section_one .pictures {
   height: 20%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .section_one .pictures img {
   height: 100%;

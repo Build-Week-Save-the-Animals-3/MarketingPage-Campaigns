@@ -1,8 +1,7 @@
 
 
 header{
-    display: flex;
-    flex-direction: column;
+    .flex-column;
             
     .bg_img {        
        
@@ -11,15 +10,13 @@ header{
         background-size: cover;
         background-repeat: no-repeat;
         height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex-center;
 
-        @media (max-width: 1000px) {
+        @media @tablet {
             width: 100%;
         }
         
-        @media (max-width: 500px) {
+        @media @mobile {
             width:100%;
         }        
                 
@@ -37,11 +34,11 @@ header{
             text-align: center;
                     
            
-            @media (max-width: 1000px) {
+            @media @tablet {
                 width: 90%;
             }
             
-            @media(max-width: 500px) {
+            @media @mobile {
                 border:none;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -59,11 +56,11 @@ header{
                 font-family: 'Podkova', serif;
                 font-weight: bolder;
                 
-                @media (max-width: 1000px) {
+                @media @tablet {
                     font-size: 2rem;
                 }
                 
-                @media(max-width: 500px){
+                @media @mobile {
                     width: 95%;
                     font-size: 2rem;
                     height: 15%;
@@ -77,7 +74,7 @@ header{
                 width: 70%;
                         
                 
-                @media(max-width: 500px){
+                @media @mobile {
                     height: 80%;
                     width: 95%;
                     flex-direction: column;
@@ -92,13 +89,13 @@ header{
                     padding-top:2%;
                            
                           
-                    @media (max-width: 1000px) {
+                    @media @tablet {
                         font-size: 1.5rem;
                         width: 30%;
                         margin-right: 5%;
                     }
                     
-                    @media(max-width: 500px){
+                    @media @mobile {
                         width: 95%;
                         margin-top: 1%;
                     }
@@ -112,11 +109,9 @@ header{
     }
     .header_content {
         
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .flex-center;
         flex-direction: column;
-        background-image: linear-gradient(to bottom right, rgba(255,230,173,0), rgba(255,230,173,1));
+        background-image: linear-gradient(to bottom right, rgba(255,230,173,0), @bgcolor);
                
                
             
@@ -128,7 +123,7 @@ header{
             text-align: center;
 
             
-            @media(max-width: 500px){
+            @media @mobile {
                 font-size: 3rem;
                 font-weight: bold;
                 width: 80%;
@@ -142,12 +137,12 @@ header{
             width: 50%;
             padding: 1%;
             
-            @media (max-width: 1000px) {
+            @media @tablet {
                 padding: 5%;
                 width: 80%;
             }
             
-            @media(max-width: 500px){
+            @media @mobile {
                 width:80%;
                 font-size: 1rem;
             }
@@ -163,19 +158,28 @@ header{
             width:40%;
             text-align: center;
             
-            @media (max-width: 1000px) {
+            @media @tablet {
                 width: 70%;
             }
-            @media(max-width: 500px) {
+            @media @mobile {
                 width: 80%;
             }
             
+            svg {
+                @media @mobile {
+                    display: none;
+                }
+            }
             
             a {
                 text-decoration: none;
                 color: black;
 
-                @media(max-width:500px) {
+                @media @tablet {
+                   font-size: 2.5rem;
+                }
+
+                @media @mobile {
                     font-size: 2.2rem;
                 }
             
@@ -183,17 +187,12 @@ header{
         }
         hr {
             
-            
-            
-            @media(max-width: 500px){
+            @media @mobile {
                 width:80%;
             
             }
         }
             
-            
-                
-
     }
 }
  
