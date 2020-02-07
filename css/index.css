@@ -257,8 +257,8 @@ header .header_content h1 {
 header .header_content p {
   font-family: 'Port Lligat Sans', sans-serif;
   font-size: 2rem;
-  width: 50%;
-  padding: 1%;
+  width: 80%;
+  padding: 2%;
 }
 @media (max-width: 1000px) {
   header .header_content p {
@@ -279,7 +279,7 @@ header .header_content .start {
   border: 3px solid #3636f0;
   font-family: 'Port Lligat Sans', sans-serif;
   padding: 1%;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 @media (max-width: 1000px) {
@@ -320,6 +320,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   background-color: #ffe6ad;
+  margin-top: 3%;
 }
 footer nav {
   width: 100%;
@@ -407,75 +408,98 @@ footer nav a {
     font-size: 0.9rem;
   }
 }
-.section_one .icons .otter_icon {
+.section_one .icons .mountain_icon {
   width: 25%;
   display: flex;
   flex-direction: row;
 }
 @media (max-width: 1000px) {
-  .section_one .icons .otter_icon {
+  .section_one .icons .mountain_icon {
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .section_one .icons .otter_icon svg {
+  .section_one .icons .mountain_icon svg {
     display: none;
   }
 }
-.section_one .icons .otter_icon p {
+.section_one .icons .mountain_icon p {
   padding: 5%;
 }
-.section_one .icons .hippo_icon {
+.section_one .icons .paw_icon {
   width: 25%;
   display: flex;
   flex-direction: row;
 }
 @media (max-width: 1000px) {
-  .section_one .icons .hippo_icon {
+  .section_one .icons .paw_icon {
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .section_one .icons .hippo_icon svg {
+  .section_one .icons .paw_icon svg {
     display: none;
   }
 }
-.section_one .icons .hippo_icon p {
+.section_one .icons .paw_icon p {
   padding: 5%;
 }
-.section_one .icons .frog_icon {
+.section_one .icons .bamboo_icon {
   width: 25%;
   display: flex;
   flex-direction: row;
 }
 @media (max-width: 1000px) {
-  .section_one .icons .frog_icon {
+  .section_one .icons .bamboo_icon {
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .section_one .icons .frog_icon svg {
+  .section_one .icons .bamboo_icon svg {
     display: none;
   }
 }
-.section_one .icons .frog_icon p {
+.section_one .icons .bamboo_icon p {
   padding: 5%;
 }
-.section_two {
-  height: 20%;
-  width: 100%;
+.section_one .icons .butterflies,
+.section_one .icons .koala,
+.section_one .icons .red_panda {
+  width: 25%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
 }
-.section_two img {
-  height: 25%;
-  width: 25%;
-  border-radius: 5rem;
-  padding: 2%;
+@media (max-width: 1000px) {
+  .section_one .icons .butterflies,
+  .section_one .icons .koala,
+  .section_one .icons .red_panda {
+    flex-direction: column;
+    padding: 5%;
+  }
 }
-.section_two .campaign_form {
-  display: inline-block;
-  width: 100%;
+.section_one .icons .butterflies ul,
+.section_one .icons .koala ul,
+.section_one .icons .red_panda ul {
+  color: black;
+  margin-top: 2%;
+}
+.section_one .icons .butterflies ul li,
+.section_one .icons .koala ul li,
+.section_one .icons .red_panda ul li {
+  padding: 3%;
+  font-family: 'Life Savers', cursive;
+}
+@media (max-width: 1000px) {
+  .section_one .icons .butterflies ul li,
+  .section_one .icons .koala ul li,
+  .section_one .icons .red_panda ul li {
+    font-size: 0.8rem;
+    margin-left: 10%;
+  }
+}
+.section_one .icons .butterflies p,
+.section_one .icons .koala p,
+.section_one .icons .red_panda p {
+  padding: 5%;
+  margin-right: 3%;
 }
