@@ -138,7 +138,7 @@ table {
   align-items: center;
   flex-direction: column;
   font-family: 'Port Lligat Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .team .PL {
   width: 100%;
@@ -147,6 +147,7 @@ table {
 .team .PL img {
   border-radius: 30rem;
   padding: 1%;
+  width: 25%;
 }
 .team .Team_members {
   width: 100%;
