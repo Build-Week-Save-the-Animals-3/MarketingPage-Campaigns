@@ -131,6 +131,34 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.team {
+  background-image: linear-gradient(to top, rgba(255, 230, 173, 0), #ffe6ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Port Lligat Sans', sans-serif;
+  font-size: 2rem;
+}
+.team .PL {
+  width: 100%;
+  text-align: center;
+}
+.team .PL img {
+  border-radius: 30rem;
+  padding: 1%;
+}
+.team .Team_members {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.team .Team_members img {
+  border-radius: 20rem;
+  width: 50%;
+  padding: 3%;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -246,6 +274,11 @@ header .header_content h1 {
   font-family: 'Port Lligat Sans', sans-serif;
   width: 50%;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  header .header_content h1 {
+    font-size: 3.8rem;
+  }
 }
 @media (max-width: 500px) {
   header .header_content h1 {
